@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<meta charset ="UTF-8"/>
+	<meta name="viewport"content="width=device-width, initial-scale=1.0" />
+<head>
+<title> Projektowanie Stron Interentowych </title>
+</head>
+<body>
+	<div style="background-color:grey">
+		<h1> <center> Formularze - Filip Sputowski </center></h1>
+	</div>
+	<div style="float:left; width:30% height:550px;"
+		<h3> HTML </h3><br />
+			<a href="index.html"> STRONA GŁÓWNA </a><br />
+			<a href="kolory.html"> KOLORY </a><br />
+			<a href="nauczyciele.html"> NAUCZYCIELE </a><br />
+			<a href="zdjecia.html"> ZDJĘCIA </a><br />
+			<a href="tabela.html"> TABELA </a><br />
+			<a href="tabela_sputowski.html"> TABELA NA OCENE </a><br />
+			<a href="listy.html"> LISTY </a><br />
+			<a href="Sputowski_lista.html"> LISTY NA OCENE </a><br />
+			<a href="mapy_odsyłaczy.html"> MAPY ODSYŁACZY </a><br />
+			<a href="formularz.html"> FORMULARZ </a><br />
+	</div>
+	<div style="float:right;width:70%;background-color:pink">
+	<form><font style="color:green"> ADRES </font>
+	<p><input type="radio" name="wybór"/> <label> Podstawowy </label>
+	<input type="radio" name="wybór" /><label> Do wysyłki</label>
+	<input type="radio" name="wybór" /> <label>Korenspondencyjny </label>
+	<input type="radio" name="wybór" /><label> Odbiorcy </p></label>
+	</form><br />
+	<form>
+	<p><label> Nazwa:</label>
+	<input type="text" name="nazwa" value="Sklep" /> </p> 
+	</form><br />
+	<form>
+	<p><label> Kod Pocztowy:</label>
+	<input type="text" name="kod pocztowy" value="43-170" /></p>
+	</form>
+	<form>
+	<p><label> Miejscowość: </label>
+	<input type="text" name="miasto" value="Łaziska Górne" /></p>
+	</form>
+	<form>
+	<p><label> Telefon:</label>
+	<input type="text" name="numer" value="+48 502 559 992" /></p>
+	</form>
+	<form>
+	<p><label> Adres E-mail: </label>
+	<input type="email" value="biznes@gmail.com" /></p>
+	</form>
+	<form><font style="color:green">WYSYŁKA</font><br />
+	<p><label> Przesyłka </label> 
+	<select>
+	<option value="ekonomia"/> Ekonomia
+	<option value="priorytet" /> Priorytet
+	<option value="Ekspres" /> Ekspres</p>
+	</select>
+	</form>
+	<form> 
+	<p><label> Waga (g)</label>
+    <input type="text" value="1000" /></p> 	
+	</form>
+	<form>
+	<p><label> Gabaryty </label>
+	<select size="4" multiple>
+	<option value="S"/> S (28 x 8 x 64cm)
+	<option value="M" /> M (38 x 19 x 64cm)
+	<option value="L" /> L (41 x 38 x 64cm)
+	<option value="XL" /> XL (60 x 60 x 70cm)</p>
+	</select>
+	</form>
+	<form>
+	<p><label> Wartość: </label>
+	<input type="text" value="0.00"/> zł
+	</form>
+	<form>
+	<p><label> Numer rachunku: </label>
+	<input type="text" size="50" /></p>
+	</form>
+	<form>
+	<p><label> Data wysyłki: </label>
+	<input type="date" value="2024-11-19" /></p>
+	<form>
+	<p><input type="checkbox" name="Z - żądanie zwrotu" /> Z - żądanie zwrotu </p>
+	<p> <input type="checkbox" name="R - polecenie" /> R - polecenie </p>
+	<p><input type="checkbox" name="O - potwierzenie odbioru" /> O - potwierzenie odbioru </p>
+	<p><input type="checkbox" name="W - zadeklarowanie wartości" /> W - zadeklarowanie wartości </p>
+	<p><input type="checkbox" name="S - Sprawdzanie zawartości" /> S - Sprawdzanie zawartości </p>
+	</form>
+	<form>
+	<p> <label><b> Uwagi: </b></label><br />
+	<textarea name="nazwa" cols="5" rows="7" style="width:220px;height:60px;" value="Uwagi itd "/>
+	</textarea>
+	</form>
+	<button type="button" name="Wyślij" value="Wyślij" onclick="allert('Wysłano :0')"/> Wyślij </button>
+	<button type="button" name="Wyślij" value="Wyślij" onclick="allert('Anulowano :0')"/> Anuluj </button>
+	</div>
+	<div style="background-color:grey;clear:both;"><center> &copy; F.S.,October 2024
+	</center></div>
+</body>
+</html>
