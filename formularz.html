@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div style="background-color:grey">
-		<h1> <center> Formularze - Filip Sputowski </center></h1>
+		<h1> <center> Projektowanie Stron Interentowych - Filip Sputowski </center></h1>
 	</div>
 	<div style="float:left; width:30% height:550px;">
 		<h3> HTML </h3><br />
@@ -23,6 +23,8 @@
 			<a href="formularz.html"> FORMULARZ </a><br />
 			<a href="formularz_na_ocene.html"> FORMULARZ NA OCENE </a><br />
 			<a href="video.html"> MEDIA </a><br />
+			<a href="właściwości_css.html"> WŁAŚCIWOŚCI CSS </a><br />
+			<a href="indentyfikator.html"> IDENTYFIKATOR CSS </a><br />
 		<h3>CSS</h3>
 		<h3>DOKUMENT</h3>
 			<a href="doc/grupa2c.docx" target="new"> LISTA GRUPA 2c </a><br /> 
@@ -40,8 +42,18 @@
 <body>
 <form action="onclick" method="post" enctype="multipart/form-data">
 <font size="6"><p><center> FORMULARZ KONTAKTOWY </center></p></font>
-<p> IMIĘ I NAZWISKO <input type="text" name"nazwisko_i_imie" size="30" /></p>
-<p> ADRES EMAIL <input type="text" name"email" value="email@gmail.com" /></p>
+<p> IMIĘ I NAZWISKO <input type="text"  size="30" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"></p>
+<script>
+function focusFunction() 
+{
+	document.getElementById("myInput").style.background = "yellow";
+}
+function blurFunction() 
+{
+	document.getElementById("myInput").style.background = "red";
+}
+</script>
+<p> ADRES EMAIL <input type="text" name="email" value="email@gmail.com" /></p>
 <p> HASŁO <input type="password" id="haslo" maxlength="10"/></p>
 </form>
 
@@ -151,36 +163,69 @@ Wprowadz swój adres
 <hr>
 </br>
 
-<p><input type="reset"   /></p>
+<p><p><input type="reset" id="q"  /></p>
 <p><input type="button" name="leavel" value="Opusc stronę!"/></p>
 
 <p><button type="button" id="kupteraz" name="przycisk_zakupu" onclick="alert('zakupiono')"> Kup teraz! </button></p>
+<input type="submit" value="wyslij" /> 
 
-</br>
-<hr>
-</br>
+<p><input type="reset" value="wyczysc" /> </p>
 
-
-
-
-
-
+<p>  
+<button type="button" name="przycisk" style="background:pink;color:aqua">ten przycisk nic nie robi</button><br/>
+<button type="submit" name="przycisk1"> Wyslij !  </button> <br />
+<button type="submit" name="przeslij" style="background:#00DD00" value="cokolwiek" onclick="alert('Przesłano formularz')">Prześlij</button><br/>
 
 
+<button type="button" name="gekon" value="dsadasdas" onclick="alert('Walnąłeś se w gekona 👍')"><img src="foty/gekon.jpg" width="500px"/></button><br/>
 
+<hr/>
 
+<input type="radio" required value="read"/>Zaznacz czy przeczytałeś regulamin ->
+<a href="https://www.youtube.com">REGULAMIN</a><br/>
 
+<input type="email" value="nazwa@gmail.com"> Podaj swojego maila <br />
+<input type="url"> Podaj swoja strone internetową <br />
+<input type="number" min="1" max="200" step="1" value="100"> Wprowadź ile masz IQ <br />
+<input type="date" value="2024-11-21"> Wpisz datę narodzin matki <br />
+<input type="color" value="#8000FF"> Podaj swój uluboiony kolor<br />
 
+<hr/>
 
+Wejdz na pole tekstowe i zobacz co sie stanie!
+<input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"> <br/>
 
+<script>
+function focusFunction() 
+{
+	document.getElementById("myInput").style.background = "yellow";
+}
+function blurFunction() 
+{
+	document.getElementById("myInput").style.background = "red";
+}
+</script>
 
+<hr/>
 
+Element wyjsciowy przedstawia wynik obliczenia <br/>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="0">
+  100 +
+  <input type="number" id="b" name="b" value="25">
+  =
+  <output name="x" for="a b"></output>
+</form>
 
-</div>
-<div style="background-color:grey;clear:both;">
-<center>&copy;F.S,October 2024 </center></div>
-	
-	
-	
+<hr/>
+<input type="text" name="lol" value="zablokowany zeby wkurzac" disabled> <br />
+
+<button type="reset">RESET</button><br/>
+	</div>
+	<div style="background-color:grey;clear:both;">
+		<center> &copy; F.S., October 2024</center>
+	</div>
 </body>
 </html>
