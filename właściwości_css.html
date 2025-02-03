@@ -46,6 +46,7 @@
 		letter-spacing: 5px;
 		}
 	h2#tytuly {
+		cursor:help;
 		text-decoration:underline;
 		word-spacing:15px;
 		text-align:left;
@@ -96,6 +97,181 @@
 		width: 70%;
 
 		}
+	.zadanie2a {
+    text-decoration: overline;
+    letter-spacing: 5pt;
+    text-align: center;
+    color: white;
+    background: fuchsia;
+    background-clip: content-box;
+    border: 3px dotted navy;
+    padding: 20px;
+    width: 70%;
+}
+	h2#ramka1
+	{
+	background-color: white;
+	color: black;
+	padding: 10px;
+	width: 70%;
+	border: 30px solid transparent;
+	border-image: url(foty/ramka.png) 50 stretch;
+	}
+
+	h2#ramka2
+	{
+	background-color: white;
+	color: black;
+	padding: 10px;
+	width: 70%;
+	border: 30px solid transparent;
+	border-image: url(foty/ramka.png) 50 round;
+	}
+	h2#ramka3
+	{
+	background: none;
+	color: black;
+	padding: 5px;
+	width: 33%;
+	border: 50px solid;
+	border-image:url(foty/gwiazda.gif)100 round;
+	}
+	h2#ramka3a
+	{
+	background: none;
+	color: black;
+	padding: 5px;
+	width: 33%;
+	border: 50px solid;
+	border-image:url(foty/gwiazda.gif) 80 round;
+	}
+	h2#ramka3b
+	{
+	background: none;
+	color: black;
+	padding: 5px;
+	width: 33%;
+	border: 50px solid;
+	border-image:url(foty/gwiazda.gif) 40 round;
+	}
+	a:link, a:visited 
+	{
+	color:black;
+	text-decoration: none;
+	background-color: fuchsia;
+	border:5px;
+	border-color: black;
+	border-radius: 5px;
+	font-size: 30px;
+
+	}
+	a.new:link, a.new:active
+	{
+	color: silver;
+	text-decoration: none;
+	background-color: black;
+	border-radius: 5px;
+	border-style: dashed;
+	}
+	.myszka:link
+	{
+		color: black;
+	text-decoration-line: none;
+	background-color: fuchsia;
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: right;
+	}
+	.myszka:active
+	{
+		color: silver;
+	text-decoration: none;
+	background-color: black;
+	border: dashed;
+	border-width: 1px;
+	border-color: silver;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: right;
+	}
+	.myszka:hover
+	{
+		color: yellow;
+	decoration: none;
+	background-color: green;
+	border: dotted;
+	border-color: yellow;
+	border-width: 1px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: right;
+	}
+
+	.myszka2:link,.myszka2:visited
+	{
+		color: black;
+	text-decoration: none;
+	background-color: yellow;
+	border-style: double;
+	background-clip: content-box;
+	border-radius: 5px;
+	padding: 5px;
+	}
+	.myszka2:hover
+	{
+		color: cyan;
+	text-decoration: none;
+	background-color: green;
+	border-style: outset;
+	background-clip: content-box
+	border-radius: 5px;
+	}
+	.myszka:active
+	{
+		color: grey;
+	text-decoration: none;
+	background-color: red;
+	border-style: dotted;
+	border-radius: 5px;
+	}
+	ul.zalety {
+	list-style-type:circle;
+	list-style-position: outside;
+	color: rgb(0, 255, 213);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+	ol.wady 
+	{
+	list-style-type:upper-alpha;
+	list-style-position: inside;
+	color: rgb(243, 207, 0);
+	font-family:Ravie;
+	}
+	ol.gwiazdka{
+		list-style-image: url(foty/gwiazda.gif);
+		list-style-position: inside;
+	}
+	ol.balwan{
+		list-style-image: url(foty/trump.webp);
+		list-style-position: inside;
+	}
+	ol.balwan2{
+		list-style-image: url(foty/trump.webp);
+		list-style-position: inside;
+	}
+	table,tr,td{
+		cursor: crosshair;
+	}
+	div#rozmiar{
+		height: 8%;
+		width: 45%;
+	color: aqua;
+	border-width: medium;
+	}
+
 </style></head>
 </head>
 <body>
@@ -104,27 +280,27 @@
 	</div>
 	<div style="float:left; width:30% height:550px;">
 		<h3> HTML </h3><br />
-			<a href="index.html"> STRONA GŁÓWNA </a><br />
-			<a href="kolory.html"> KOLORY </a><br />
-			<a href="nauczyciele.html"> NAUCZYCIELE </a><br />
-			<a href="zdjecia.html"> ZDJĘCIA </a><br />
-			<a href="tabela.html"> TABELA </a><br />
-			<a href="tabela_sputowski.html"> TABELA NA OCENE </a><br />
-			<a href="listy.html"> LISTY </a><br />
-			<a href="Sputowski_lista.html"> LISTY NA OCENE </a><br />
-			<a href="mapy_odsyłaczy.html"> MAPY ODSYŁACZY </a><br />
-			<a href="formularz.html"> FORMULARZ </a><br />
-			<a href="formularz_na_ocene.html"> FORMULARZ NA OCENE </a><br />
-			<a href="video.html"> MEDIA </a><br />
-			<a href="właściwości_css.html"> WŁAŚCIWOŚCI CSS </a><br />
-			<a href="indentyfikator.html"> IDENTYFIKATOR CSS </a><br />
+			<a class="myszka" href="index.html"> STRONA GŁÓWNA </a><br />
+			<a class="myszka" href="kolory.html"> KOLORY </a><br />
+			<a class="myszka" href="nauczyciele.html"> NAUCZYCIELE </a><br />
+			<a class="myszka" href="zdjecia.html"> ZDJĘCIA </a><br />
+			<a class="myszka" href="tabela.html"> TABELA </a><br />
+			<a class="myszka" href="tabela_sputowski.html"> TABELA NA OCENE </a><br />
+			<a class="myszka" href="listy.html"> LISTY </a><br />
+			<a class="myszka" href="Sputowski_lista.html"> LISTY NA OCENE </a><br />
+			<a class="myszka" href="mapy_odsyłaczy.html"> MAPY ODSYŁACZY </a><br />
+			<a class="myszka" href="formularz.html"> FORMULARZ </a><br />
+			<a class="myszka" href="formularz_na_ocene.html"> FORMULARZ NA OCENE </a><br />
+			<a class="myszka" href="video.html"> MEDIA </a><br />
 		<h3>CSS</h3>
+		<a class="myszka" href="właściwości_css.html"> WŁAŚCIWOŚCI CSS </a><br />
+		<a class="myszka" href="indentyfikator.html"> IDENTYFIKATOR CSS </a><br />
 		<h3>DOKUMENT</h3>
-			<a href="doc/grupa2c.docx" target="new"> LISTA GRUPA 2c </a><br /> 
-			<a href="doc/wydatki_grupa2c.xlxs" target="new"> WYDATKI GRUPA 2c </a><br /> 
+			<a class="myszka" href="doc/grupa2c.docx" target="new"> LISTA GRUPA 2c </a><br /> 
+			<a class="myszka" href="doc/wydatki_grupa2c.xlxs" target="new"> WYDATKI GRUPA 2c </a><br /> 
 		<h3>LINKI</h3>
-			<a href="https://www.google.com"><img src="foty/google.png" width="50px" target="new"></a><br />
-			<a href="https://www.tsi-pai.cba.pl"><img src="foty/tsi.png" width="50px" target="new"></a><br />
+			<a class="myszka" href="https://www.google.com"><img src="foty/google.png" width="50px" target="new"></a><br />
+			<a class="myszka" href="https://www.tsi-pai.cba.pl"><img src="foty/tsi.png" width="50px" target="new"></a><br />
 		<h3>MULTIMEDIA</h3>
 	</div>
 	<div style="float:right;width:70%;">
@@ -163,8 +339,94 @@
 	<h3 id="zadanie1">KOLOR TEKSTU: SREBRNY, CZARNE TŁO, ŻÓŁTE OBRAMOWANIE, STYL OBRAMOWANIA: RIDGE,
 		DUŻE LITERY / KAPITALIKI, TEKST USTAWIONY: DO PRAWEJ, BRAK DEKORACJI</h3>
 	<h3 class="zadanie2">TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%</h3>
-		</div>
+	<h3 class="zadanie2a">TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%</h3>
+	<h2 id="ramka1"> zadanie IV – OBRAMOWANIE:
+		Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka1"
+		TŁO: białe; TEKST: czarny, ODSTĘP: 10px, SZEROKOŚĆ: 70%; border: 30px solid transparent;
+		border-image: url(folder/nazwa.jpg) 50 stretch;
+		
+		OBRAZ JEST ROZCIĄGNIĘTY ABY WYPEŁNIĆ CAŁY OBSZAR. </h2>
+	<h2 id="ramka2">zadanie IV – OBRAMOWANIE:
+		Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka2"
+		TŁO: białe; TEKST: czarny, ODSTĘP: 10px, SZEROKOŚĆ: 70%; border: 30px solid transparent;
+		border-image: url(folder/nazwa.jpg) 50 round;
+		
+		OBRAZ WYPEŁNIA OBSZAR. W RAZIE POTRZEBY JEST PRZESKALOWNY, ABY WYPEŁNIĆ OBSZAR. </h2>
+	<h2 id="ramka3">zadanie IV – OBRAMOWANIE:
+		Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3"
+		TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+		border-image: url(foty/gwiazdka1.gif) 100 round;</h2>
+	<h2 id="ramka3a">zadanie IV – OBRAMOWANIE:
+		Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3a"
+		TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+		border-image: url(foty/gwiazdka1.gif) 80 round;</h2>
+	<h2 id="ramka3b">zadanie IV – OBRAMOWANIE:
+		Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3b"
+		TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+		border-image: url(foty/gwiazdka1.gif) 40 round; </h2><br>
+		<h2 id="tytuly">ZADANIE V <br /></h2>
+		<a class="myszka" href="https://www.onet.pl/">onet</a>
+		<a class="myszka" href="https://www.wp.pl/">wirtualna polska</a>
+		<a class="myszka" href="https://tsi-pai.cba.pl/"> TSI - PAI</a>
+		
+		<br /><br />
+		
+		<a class="myszka2" href="https://www.onet.pl/">onet</a>
+		<a class="myszka2" href="https://www.wp.pl/">wirtualna polska</a>
+		<a class="myszka2" href="https://tsi-pai.cba.pl/"> TSI - PAI</a>
+		 
+		<br /><br />
+		<h2 id="tytuly">ZADANIE VI <br /></h2>
+		<ul class="zalety"> ZALETY 
+			<li>Fajnie</li>
+			<li>Spoko</li>
+			<li>Tak</li>
+			<li>No nawet</li>
+			<Li>Okej</Li>
+		</ul>
+		<br>
+		<ol class="wady">WADY
+			<li>NIE MA :]</li>
+			<li>NIE MA :]</li>
+			<li>NIE MA :]</li>
+		</ol>
+		<br>
+		<ol class="gwiazdka"> 
+			<li style="list-style-image: url(foty/gwiazdka.gif);"> KUPIĆ PREZENTY</li> 
+		</ol>
+		<br>
+		<ol class="balwan"> 
+			<li style="list-style-image: url(foty/trump.webp);"> KUPIĆ KARPIA</li> 
+		</ol>
+		<br />
+		<ol class="balwan2"> 
+			<li style="list-style-image: url(foty/trump.webp);"> KUPIĆ OPŁATKI</li> 
+		</ol>
+		<br />
+		<ol class="gwiazdka2"> 
+			<li style="list-style-image: url(foty/gwiazda.gif);">NIC NIE ROBIĆ</li> 
+			<li style="list-style-image: url(foty/gwiazda.gif);"> ZROBIC 2 DANIA</li> 
+			<li style="list-style-image: url(foty/gwiazda.gif);"> negeria</li> 
+		</ol>
+		<h3>zadanie VII – KURSOR:</h3>
+		<br />
+		<h3><table border="1" width="20%">
+			<tr> 
+				<td> 1 </td>
+				<td> 2 </td>
+		</table></h3>
+
+		<br />
+		<h2 id="tytuly">ZADANIE VIII <br /></h2>
+		<div id="obramowanie1"> tak lubie</div>
+	</br>
+	
+
+
+	
+</div>
 	<div style="background-color:grey;clear:both;"><center> &copy; F.S.,October 2024
 	</center></div>
+
 </body>
 </html>
